@@ -14,9 +14,9 @@ with open("body.json", mode="r", encoding="utf-8") as file:
 result ={}
 for key, value in test_results.items(): 
     if value >=60: 
-        result[key]=["Pass"]
+        result[key]="Pass"
     else: 
-        result[key]=["Fail"]
+        result[key]="Fail"
 
 #print(result)
 
